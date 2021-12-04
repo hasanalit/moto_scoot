@@ -1,0 +1,138 @@
+.hero {
+    &__container {
+        height: 650px;
+        width: 100%;
+        background-image: url(../images/hero-back.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__heading {
+        margin: 0;
+        margin-left: 165px;
+        padding-top: 152px;
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    // &__text {
+    //     display: flex;
+    //     align-items: center;
+    // }
+
+    &__desc {
+        display: inline-block;
+        margin: 0;
+        margin-left: 57px;
+        font-family: Lexend Deca;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        max-width: 405px;
+    }
+
+    &__left-img {
+        display: inline-block;
+    }
+
+    &__right-img {
+        display: inline-block;
+        padding-top: 90px;
+        padding-left: 40px;
+    }
+
+    &__btn {
+        margin-left: 260px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero {
+        &__container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+    &__left-img {
+        display: none;
+    }
+
+    &__right-img {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: -800px;
+    }
+
+    &__heading {
+        margin: 0px;
+        margin-bottom: 24px;
+        padding: 0;
+        padding-top: 130px;
+    }
+
+    &__desc {
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+    &__btn {
+        margin: 0;
+    }
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+    .hero {
+        &__right-img {
+            margin-left: -600px;
+        }
+
+        &__heading {
+            margin-bottom: 24px;
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -1.78571px;
+            width: 100%;
+            max-width: 311px;
+        }
+
+        &__desc {
+            margin-bottom: 34px;
+            font-size: 15px;
+            line-height: 25px;
+            width: 100%;
+            max-width: 311px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// @media only screen and (-webkit-min-device-pixel-ratio: 2),
+//     only screen and (min--moz-device-pixel-ratio: 2),
+//     only screen and (-o-min-device-pixel-ratio: 2/1),
+//     only screen and (min-device-pixel-ratio: 2),
+//     only screen and (min-resolution: 192dpi),
+//     only screen and (min-resolution: 2dppx) {
+//         .hero__container {
+//             background-image: url("../images/hero-back@2x.png");
+//         }
+
+// }
