@@ -1,0 +1,106 @@
+.header {
+    padding: 0px 20px;
+    &__container {
+        display: flex;
+        align-items: center;
+        padding: 22px 0px;
+    }
+
+    &__logo {
+        display: inline-block;
+    }
+
+    &__img {
+        flex-shrink: 0;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        margin-left: 58px;
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item + &__item {
+        margin-left: 32px;
+    }
+
+    &__link {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        color: #000;
+    }
+
+    &__link:active {
+        opacity: 0.6;
+    }
+
+    &__hamburger {
+        display: none;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../images/bars-solid.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .header {
+        position: relative;
+
+        &__logo {
+            margin: 0px auto;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__hamburger {
+            display: inline-block;
+        }
+    }
+
+    .header--open .header__nav {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: #E7816B;
+        }
+
+        .header--open .header__list {
+            flex-direction: column;
+        }
+
+        .header--open .header__item {
+            margin: 10px auto;
+        }
+
+
+        .header--open .header__link {
+            color: #fff;
+        }
+
+        .header--open .header__hamburger {
+            background-image: url("../images/times-solid.svg");
+          }
+    }
