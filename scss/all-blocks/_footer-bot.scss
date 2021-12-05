@@ -11,6 +11,16 @@
         display: inline-block;
     }
 
+
+    &__logo:hover {
+        opacity: 0.8;
+    }
+
+    &__logo:active {
+        opacity: 0.6;
+    }
+
+
     &__img {
         flex-shrink: 0;
     }
@@ -31,6 +41,14 @@
         margin: 0;
         padding: 0;
         list-style: none;
+    }
+
+    &__item:hover {
+        opacity: 0.8;
+    }
+
+    &__item:active {
+        opacity: 0.6;
     }
 
     &__item + &__item {
