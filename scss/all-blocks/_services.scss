@@ -1,5 +1,5 @@
 .services {
-    padding: 80px 0px;
+    padding: 100px 0px;
     &__line {
         margin-left: -150px;
         width: 100%;
@@ -11,6 +11,7 @@
     }
 
     &__list {
+        position: relative;
         display: flex;
         align-items: center;
         margin: 0;
@@ -76,7 +77,7 @@
         }
 
         &__list {
-            position: absolute;
+            position: relative;
             display: flex;
             flex-direction: column;
         }
